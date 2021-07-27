@@ -1,0 +1,27 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>你好</title>
+</head>
+<script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+<body>
+<div id="aa"></div>
+
+<script language="text/javascript"
+var fso, ts, s ;
+var ForReading = 1;
+
+var fso = new ActiveXObject("Scripting.FileSystemObject");
+ts = fso.OpenTextFile(read_gs.txt, ForReading);
+s = ts.ReadLine();
+document.getElementById('aa').innerHTML=s;
+
+alert(s)
+console.log(s)
+
+</script>
+
+</body>
+</html>
